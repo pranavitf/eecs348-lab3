@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EECS 348 Lab Three Practice Three</title>
+</head>
+<body>
+    <h1>EECS 348 Lab Three Practice Three</h1>
+    <div>
+        <label for="pass1">First Password:</label>
+        <input type="password" id="pass1">
+    </div>
+    <div>
+        <label for="pass2">Second Password:</label>
+        <input type="password" id="pass2">
+    </div>
+    <button onclick="verifyPasswords()">Validate Your Passwords</button>
+
+    <script>
+        function verifyPasswords() {
+            const pass1 = document.getElementById('pass1').value;
+            const pass2 = document.getElementById('pass2').value;
+
+            if (pass1.length < 8) {
+                alert('Password must be at least 8 characters long.');
+            } else if (pass1 !== pass2) {
+                alert('The two passwords do not match.');
+            } else {
+                alert('The two passwords are matched.');
+            }
+        }
+    </script>
+</body>
+</html>
