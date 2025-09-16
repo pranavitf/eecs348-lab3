@@ -31,7 +31,7 @@
             border-radius: 5px;
         }
         /* Styling for better spacing between elements */
-        p, a, figure {
+        p, a, figure, ul {
             margin-bottom: 20px;
         }
         /* Class to make the profile picture smaller */
@@ -53,12 +53,29 @@
             border-color: rgba(255, 255, 255, 0.3);
             margin-bottom: 20px;
         }
+        /* NEW: Styling for the profile info list */
+        .profile-info {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1em;
+        }
+        .profile-info li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>EECS 348 Lab Three Practice One</h1>
+
+        <ul class="profile-info">
+            <li><strong>Name:</strong> Pranav Amatapu</li>
+            <li><strong>Major:</strong> Computer Science</li>
+            <li><strong>Institution:</strong> University of Kansas</li>
+        </ul>
+
+        <hr>
 
         <p>Welcome to my profile page for EECS 348. Beyond my interest in software engineering, I'm a passionate follower of football, with a special love for the Premier League. It is arguably the most competitive and exciting football league in the world, showcasing incredible talent from global superstars and delivering intense, unpredictable matches every week. The atmosphere in the stadiums, like the one in the background, is electric and a huge part of what makes the sport so special.</p>
 
@@ -72,7 +89,7 @@
         </figure>
 
         <figure>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/pH3vPDJwuSM?si=3-52eJ_e7QxCIqy1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="http://googleusercontent.com/youtube.com/7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>A video showcasing some unforgettable Premier League moments.</figcaption>
         </figure>
 
